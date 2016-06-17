@@ -1,0 +1,10 @@
+F:\codework\project\idev\window\Micsoft\window\bin\Debug\window.exe.config
+F:\codework\project\idev\window\Micsoft\window\bin\Debug\window.exe
+F:\codework\project\idev\window\Micsoft\window\bin\Debug\window.pdb
+F:\codework\project\idev\window\Micsoft\window\obj\Debug\window.csprojResolveAssemblyReference.cache
+F:\codework\project\idev\window\Micsoft\window\obj\Debug\window.winMain.resources
+F:\codework\project\idev\window\Micsoft\window\obj\Debug\window.Properties.Resources.resources
+F:\codework\project\idev\window\Micsoft\window\obj\Debug\window.csproj.GenerateResource.Cache
+F:\codework\project\idev\window\Micsoft\window\obj\Debug\window.exe
+F:\codework\project\idev\window\Micsoft\window\obj\Debug\window.pdb
+F:\codework\project\idev\window\Micsoft\window\obj\Debug\window.PicForm.resources
