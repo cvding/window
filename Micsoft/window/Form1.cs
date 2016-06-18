@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net;
 
 namespace window
 {
@@ -21,6 +22,15 @@ namespace window
         public winMain()
         {
             InitializeComponent();
+        }
+
+        private string getHostIp()
+        {
+            string hostname = Dns.GetHostName();//得到本机名   
+             //IPHostEntry localhost = Dns.GetHostByName(hostname);//方法已过期，只得到IPv4的地址   
+             IPHostEntry localhost = Dns.GetHostEntry(hostname);  
+             IPAddress localaddr = localhost.AddressList[0];
+             return hostname;//localaddr.ToString();  
         }
 
         private void bntReadImgs_Click(object sender, EventArgs e)
@@ -49,7 +59,7 @@ namespace window
                     this.txtPath.Text = fdlg.FileName;
 
                     m_picForm.ShowImage(m_picInfo);
-                    
+                    this.txtPath.Text = getHostIp();
                     
                     
                 }
@@ -75,6 +85,10 @@ namespace window
             {
                 m_picNumb++;
                 if (m_picNumb == m_path.Length) m_picNumb = 0;
+                if (m_picForm == null || m_picForm.m_open == false)
+                {
+                    m_picForm = new PicForm();
+                }
                 m_picForm.ShowImage(m_path[m_picNumb]);
             }
         }
